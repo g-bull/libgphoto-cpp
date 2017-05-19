@@ -93,7 +93,9 @@ ReadImage::Image ReadRawImage::Private::read_image(const LoadRaWImage& init_raw,
   image_data.params.no_auto_scale = 1;
   image_data.params.no_auto_bright = 1;
   image_data.params.no_interpolation = 1;
-  image_data.params.sraw_ycc =1;
+  // image_data.params.sraw_ycc =1; /* not in libraw/0.18.2 */
+  image_data.params.raw_processing_options = LIBRAW_PROCESSING_SRAW_NO_RGB;
+
   fill_n(begin(image_data.params.gamm), 2, 1.);
   run(init_raw);
   run([&](LibRaw &r) { return r.unpack(); });

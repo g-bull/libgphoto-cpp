@@ -18,10 +18,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "fwd.h"
-#include "utils/dptr.h"
+#include "../fwd.h"
+#include "../utils/dptr.h"
 #include <list>
-#include "utils/logger.h"
+#include "../utils/logger.h"
 namespace GPhotoCPP {
 
 class Widget : public std::enable_shared_from_this<Widget>

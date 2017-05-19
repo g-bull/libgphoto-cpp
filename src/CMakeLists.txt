@@ -29,4 +29,5 @@ set_target_properties(gphoto++ PROPERTIES VERSION ${gphoto++_VERSION_STRING} SOV
 set(gphoto++_DEPS ${GPHOTO2_LIBRARY} ${GPHOTO2_PORT_LIBRARY} pthread)
 set(libgphoto++_LIBRARIES gphoto++ ${gphoto++_DEPS} PARENT_SCOPE)
 install(TARGETS gphoto++ DESTINATION lib)
-install(FILES ${headers_FILES} DESTINATION includes/gphoto++)
+#install(FILES ${headers_FILES} DESTINATION include/gphoto++) # breaks because it doens't preserver hierarchy
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/ DESTINATION include/gphoto++ FILES_MATCHING PATTERN "*.h")

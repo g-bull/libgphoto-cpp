@@ -20,7 +20,7 @@
 #define LIBGPHOTO_CPP_UTILS_READ_JPEG_IMAGE_H
 
 #include "read_image.h"
-#include "utils/dptr.h"
+#include "dptr.h"
 namespace GPhotoCPP {
 
 class ReadJPEGImage : public ReadImage

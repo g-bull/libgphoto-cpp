@@ -18,7 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "fwd.h"
+#include "../fwd.h"
 #include <functional>
 #include <gphoto2/gphoto2.h>
 

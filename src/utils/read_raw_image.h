@@ -21,7 +21,7 @@
 
 
 #include "read_image.h"
-#include "utils/dptr.h"
+#include "dptr.h"
 
 namespace GPhotoCPP {
 

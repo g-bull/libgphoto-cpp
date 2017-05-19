@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "utils/logger.h"
+#include "logger.h"
 using namespace GPhotoCPP;
 DPTR_CLASS(Logger) {
 public:
